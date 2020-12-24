@@ -18,8 +18,23 @@
       text-align: center;
       line-height: 100px;
     }
-    .win {
+    .daikichi {
       background: pink;
+      border-radius: 50%;
+      transform: rotate(360deg);
+    }
+    .tyukichi {
+      background: orange;
+      border-radius: 50%;
+      transform: rotate(360deg);
+    }
+    .syoukichi {
+      background: LightGreen;
+      border-radius: 50%;
+      transform: rotate(360deg);
+    }
+    .kyou {
+      background: LightGrey;
       border-radius: 50%;
       transform: rotate(360deg);
     }
@@ -46,16 +61,16 @@
       div.addEventListener('click', () => {
         if (i === daikichi) {
           div.textContent = '大吉!';
-          div.classList.add('大吉');
+          div.classList.add('daikichi');
         } else if (i === tyukichi) {
           div.textContent = '中吉!';
-          div.classList.add('中吉');
+          div.classList.add('tyukichi');
         }else if (i === syoukichi) {
           div.textContent = '小吉!';
-          div.classList.add('小吉');
+          div.classList.add('syoukichi');
         }else if (i === kyou) {
           div.textContent = '凶!';
-          div.classList.add('凶');
+          div.classList.add('kyou');
         }else{
           div.textContent = 'Lose!';
           div.classList.add('lose');
